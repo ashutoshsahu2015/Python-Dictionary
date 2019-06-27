@@ -1,6 +1,6 @@
 # Python-Dictionary App
 
-A simple command line dictionary application based on json data source 
+## A simple command line dictionary application based on json data source 
 
 ### User can search for a particular word in the dictionary 
 ### User can enter the words that can be case sensitive 
