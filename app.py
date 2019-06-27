@@ -25,11 +25,23 @@ def translate(word):
             return "We didn't understand your entry."
     else:
         return "The word doesn't exist.Please double check it"
+def main():
+    while True:
+        ch = input("\n1. Search a Word\n2. Exit\n Enter Your Choice: ")
+        if ch == '1':
+            words =input("Enter word:") #input the word from user
+            output = translate(words)
+            if type(output)==list:   #check for output list
+                for item in output:
+                    print(item)
+            else:
+                print(output)
+        elif ch == '2':
+            print("Good Bye!!!")
+            break
+        else:
+            print("Invalid Input!!!\nPlease Try Again.")
 
-words =input("Enter word:") #input the word from user 
-output = translate(words)
-if type(output)==list:   #check for output list
-    for item in output:
-        print(item)
-else:
-    print(output)
+
+if __name__ == '__main__':
+    main()
